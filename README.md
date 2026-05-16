@@ -129,9 +129,12 @@ A shared folder was created on DC01 to simulate company file access with role-ba
 ```powershell
 # Create the shared folder
 New-Item -Path "c:\Shared" -ItemType Directory
+
+# Configure SMB Network Share permissions for IT and HR groups
+New-SmbShare -Name Shared -Path c:\Shared -FullAccess "IT_Group" -ReadAccess "HR_Group"
 ```
 
-![Creating the Shared Folder](screenshots/Screenshot_2026-05-16_104136.png)
+![Creating the Shared Folder](screenshots/Screenshot_2026-05-16_123548.png)
 
 | Group | Permission |
 |---|---|
