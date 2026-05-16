@@ -16,7 +16,7 @@ Everything runs through DC01, which acts as the heart of the lab. Every other ma
 
 All three virtual machines are configured and managed through Oracle VirtualBox.
 
-![VirtualBox VM Overview](screenshots/Screenshot 2026-05-16 102054.png)
+![VirtualBox VM Overview](screenshots/Screenshot_2026-05-16_102054.png)
 
 **Network:** Each VM uses a NAT adapter for internet access and a Host-Only adapter for internal communication, mirroring how enterprise environments separate internal and external traffic.
 
